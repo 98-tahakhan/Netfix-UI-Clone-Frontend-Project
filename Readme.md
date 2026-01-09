@@ -7,7 +7,7 @@ The goal of this project is to practice real-world frontend development concepts
 ---
 
 ## 🌐 Live Demo
-(Deployed on Vercel – link here)
+https://netflix-ui-clone-frontend-project.vercel.app/
 
 ---
 

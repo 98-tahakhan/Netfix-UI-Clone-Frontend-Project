@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch Shows Online, Watch Movies Online</title>
+    <link rel="icon" type="image/png" sizes="180x180" href="./assets/Netflix-new-icon.png">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="bg-black text-white select-none">
+
+    <div class="relative min-h-screen overflow-hidden bg-[url('/assets/bg.jpg')] bg-cover bg-center flex flex-col">
+        <div class="overlay"></div>
+
+        <!-- Navbar -->
+        <nav class="relative z-50 h-20 flex items-center justify-between px-4 sm:px-8">
+
+            <div
+                class="w-40 h-full bg-[url('/assets/logo.png')] bg-contain bg-no-repeat bg-center sm:width-sm md:width-lg sm:h-25">
+            </div>
+
+            <div class="flex items-center gap-2 sm:gap-4">
+
+                <button class="flex items-center gap-2 px-4 py-1.5 bg-black/60
+               text-white border border-gray-400 rounded text-sm font-medium">
+                    <i class="fa-solid fa-language"></i>
+                    English
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+
+                <button class="px-3 py-1.5 sm:px-4 bg-red-600 text-white text-sm sm:text-base
+                   font-bold rounded hover:bg-red-700">Sign In</button>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="relative z-50 flex flex-1 flex-col items-center justify-center text-white text-center px-4 sm:px-6">
+
+            <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">Unlimited movies,<br
+                    class="hidden sm:block">
+                shows, and more</h1>
+            <p class="py-4 text-2xl font-bold">Starts at &#8377 149. Cancel at any time.</p>
+            <h3 class="py-3 text-md">Ready to watch? Enter your email to create or restart your membership.</h3>
+
+            <div class="flex flex-col sm:flex-row gap-3 max-w-xl mx-4 px-4 sm:px-0">
+
+                <input type="email" placeholder="Email address" class="width-xl px-4 py-4 bg-black/60 text-white
+                border border-gray-500 rounded
+                focus:outline-none focus:border-white">
+
+                <button class="px-6 py-3 bg-red-600 text-white text-lg sm:text-xl font-bold rounded
+               hover:bg-red-700 active:scale-95 transition-all">
+                    Get Started
+                    <i class="fa-solid fa-angle-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="relative bg-black">
+        <!-- CURVE -->
+        <div class="relative z-50 height-xsm bg-black
+                    border-t-4 border-[#e50914]
+                    rounded-t-[100%_100%]
+                    overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b
+                    from-blue-700/40 to-black"></div>
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="main-content relative px-6">
+            <h2 class="mx-10 sm:mx-20 xl:mx-35 text-2xl font-bold">Trending Now</h2>
+
+            <div class="relative">
+
+                <!-- Left button -->
+                <button id="left-btn" class="slider-btn slider-hidden absolute left-0 inset-y-0 my-auto z-20
+                                h-30 w-6 bg-[#1a1a1a] hover:bg-[#2a2a2a]
+                                flex items-center justify-center rounded-md
+                                transition-transform duration-300 hover:scale-110
+                                mx-2 sm:mx-10 xl:mx-25">
+
+                    <i class="fa-solid fa-angle-left text-white text-xl"></i>
+                </button>
+
+                <!-- Cards Row -->
+                <div class="cards flex gap-10 overflow-x-auto scrollbar-hide overscroll-x-contain scroll-smooth 
+                            mx-10 my-10 sm:mx-20 sm:my-15 xl:mx-35 xl:my-6">
+
+
+                    <!-- Card1 -->
+                    <div tabindex="0" role="group" aria-label="Trending show: Stranger Things"
+                        class="ml-4 relative width-md height-md bg-[url('/assets/stranger-things.jpg')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">1</span>
+                    </div>
+
+                    <!-- Card2 -->
+                    <div tabindex="0" role="group" aria-label="The Kapil Sharma Show"
+                        class="relative width-md height-md bg-[url('/assets/kapil-show.jpg')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">2</span>
+                    </div>
+
+                    <!-- Card3 -->
+                    <div tabindex="0" role="group" aria-label="Jolly LLB 3"
+                        class="relative width-md height-md bg-[url('/assets/jolly-llb.jpg')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">3</span>
+                    </div>
+
+                    <!-- card4 -->
+                    <div tabindex="0" role="group" aria-label="Dude"
+                        class="relative width-md height-md bg-[url('/assets/dude.webp')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">4</span>
+                    </div>
+
+                    <!-- Card5 -->
+                    <div tabindex="0" role="group" aria-label="The Girlfriend"
+                        class="relative width-md height-md bg-[url('/assets/the-girlfriend.jpg')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">5</span>
+                    </div>
+
+                    <!-- Card6 -->
+                    <div tabindex="0" role="group" aria-label="Single Papa"
+                        class="relative width-md height-md bg-[url('/assets/single-papa.jpg')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">6</span>
+                    </div>
+
+                    <!-- Card7 -->
+                    <div tabindex="0" role="group" aria-label="Haq"
+                        class="relative width-md height-md bg-[url('/assets/haq.webp')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">7</span>
+                    </div>
+
+                    <!-- Card8 -->
+                    <div tabindex="0" role="group" aria-label="Eko"
+                        class="relative width-md height-md bg-[url('/assets/eko.jpg')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">8</span>
+                    </div>
+
+                    <!-- Card9 -->
+                    <div tabindex="0" role="group" aria-label="Saiyaara"
+                        class="relative width-md height-md bg-[url('/assets/saiyaara.jpg')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">9</span>
+                    </div>
+
+                    <!-- Card10 -->
+                    <div tabindex="0" role="group" aria-label="Andhra King"
+                        class="relative width-md height-md bg-[url('/assets/andhraking.gif')] 
+                                    bg-cover bg-center rounded-md flex items-end hover:scale-105 transition-transform duration-400 ease-out">
+                        <span class="absolute -left-4 bottom-10
+                        text-8xl font-extrabold text-black stroke-2">10</span>
+                    </div>
+
+                </div>
+
+                <!-- Right button -->
+                <button id="right-btn" class="slider-btn slider-visible absolute right-0 inset-y-0 my-auto z-20
+                                h-30 w-6 bg-[#1a1a1a] hover:bg-[#2a2a2a]
+                                flex items-center justify-center rounded-md
+                                transition-transform duration-300 hover:scale-110
+                                mx-2 sm:mx-10 xl:mx-25">
+                    <i class="fa-solid fa-angle-right text-white text-xl"></i>
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- More reasons to join -->
+        <div class="mx-10 my-15 sm:mx-20 sm:my-20 xl:mx-35 xl:my-20">
+            <h2 class="text-2xl font-bold my-4">More reasons to join</h2>
+
+            <div class="grid gap-6
+                        grid-cols-1
+                        sm:grid-cols-2
+                        lg:grid-cols-3
+                        xl:grid-cols-4">
+
+                <!-- Card1 -->
+                <div class="height-lg px-4 py-4 flex flex-col justify-between rounded-2xl bg-gradient-to-br
+                 from-[#1d2547] via-[#1D172E] to-[#250916] shadow-xl shadow-black/40">
+
+                    <!-- card text -->
+                    <div>
+                        <h3 class="text-2xl font-bold py-2">Enjoy on your TV</h3>
+                        <p class="text-gray-300">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+                            players, and more.</p>
+                    </div>
+                    <!-- card icon -->
+                    <div class="flex justify-end">
+                        <img src="/assets/card1.png" alt="Watch Netflix on TV" class="h-15 w-auto" />
+                    </div>
+                </div>
+
+                <!-- Card2 -->
+                <div class="height-lg px-4 py-4 flex flex-col justify-between rounded-2xl bg-gradient-to-br
+                 from-[#1d2547] via-[#1D172E] to-[#1e0711] shadow-xl shadow-black/40">
+
+                    <!-- card text -->
+                    <div>
+                        <h3 class="text-2xl font-bold py-2">Download your shows to watch offline</h3>
+                        <p class="text-gray-300">Save your favourites easily and always have something to watch.</p>
+                    </div>
+
+                    <!-- card icon -->
+                    <div class="flex justify-end">
+                        <img src="/assets/card2.png" alt="Download shows offline" class="h-18 w-auto" />
+                    </div>
+                </div>
+
+                <!-- Card3 -->
+                <div class="height-lg px-4 py-4 flex flex-col justify-between rounded-2xl bg-gradient-to-br
+                 from-[#1d2547] via-[#1D172E] to-[#1e0711] shadow-xl shadow-black/40">
+
+                    <!-- card text -->
+                    <div>
+                        <h3 class="text-2xl font-bold py-2">Watch everywhere</h3>
+                        <p class="text-gray-300">Stream unlimited movies and TV shows on your phone, tablet, laptop, and
+                            TV.</p>
+                    </div>
+
+                    <!-- card icon -->
+                    <div class="flex justify-end">
+                        <img src="/assets/card3.png" alt="Watch on all devices" class="h-18 w-auto" />
+                    </div>
+                </div>
+
+                <!-- Card4 -->
+                <div class="height-lg px-4 py-4 flex flex-col justify-between rounded-2xl bg-gradient-to-br
+                 from-[#1d2547] via-[#1D172E] to-[#250916] shadow-xl shadow-black/40">
+
+                    <!-- card text -->
+                    <div>
+                        <h3 class="text-2xl font-bold py-2">Create profiles for kids</h3>
+                        <p class="text-gray-300">Send kids on adventures with their favourite characters in a space made
+                            just for them —
+                            free with your membership.</p>
+                    </div>
+
+                    <!-- card icon -->
+                    <div class="flex justify-end">
+                        <img src="/assets/card4.png" alt="profiles for kids" class="h-15 w-auto" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FAQ section -->
+    <section>
+
+        <div class="mx-10 my-15 sm:mx-20 sm:my-20 xl:mx-35 xl:my-20">
+            <h2 class="text-xl font-semibold my-4 sm:text-xl xl:text-2xl">Frequently Asked Questions</h2>
+
+            <div class="grid gap-1
+                        grid-cols-1">
+
+                <!-- Question 1 -->
+                <div role="button" aria-expanded="false" tabindex="0" class="ques text-lg p-6 font-normal bg-[#2d2d2d] sm:text-xl xl:text-2xl hover:bg-[#3a3a3a] transition-colors 
+                            duration-200 ease-in-out cursor-pointer
+                            flex justify-between items-center">
+                    <span>What is Netflix?</span>
+                    <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                </div>
+
+                <!-- Answer 1 -->
+                <div class="answer">
+                    <div class="grid gap-6 grid-cols-1 text-lg p-6 font-normal bg-[#2d2d2d] sm:text-md xl:text-2xl ">
+                        <h2>Netflix is a streaming service that offers a wide variety of award-winning
+                            TV shows, movies, anime, documentaries and more – on thousands of internet-connected
+                            devices.</h2>
+                        <h2>You can watch as much as you want, whenever you want, without a single ad – all for one low
+                            monthly price.
+                            There's always something new to discover, and new TV shows and movies are added every week!
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div role="button" aria-expanded="false" tabindex="0" class="ques text-lg p-6 font-normal bg-[#2d2d2d] sm:text-xl xl:text-2xl hover:bg-[#3a3a3a] transition-colors 
+                duration-200 ease-in-out cursor-pointer
+                flex justify-between items-center">
+                    <span>How much does Netflix cost?</span>
+                    <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                </div>
+
+                <!-- Answer 2 -->
+                <div class="answer">
+                    <div class="text-lg p-6 font-normal bg-[#2d2d2d] sm:text-md xl:text-2xl ">
+                        <h2>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, 
+                            all for one fixed monthly fee. Plans range from ₹149 to ₹649/month.</h2>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div role="button" aria-expanded="false" tabindex="0" class="ques text-lg p-6 font-normal bg-[#2d2d2d] sm:text-xl xl:text-2xl hover:bg-[#3a3a3a] transition-colors 
+            duration-200 ease-in-out cursor-pointer
+            flex justify-between items-center">
+                    <span>Where can I watch?</span>
+                    <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                </div>
+
+                <!-- Answer 3 -->
+                <div class="answer">
+                    <div class="grid gap-6 grid-cols-1 text-lg p-6 font-normal bg-[#2d2d2d] sm:text-md xl:text-2xl ">
+                        <h2>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly 
+                            on the web at netflix.com from your personal computer or on any internet-connected device 
+                            that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</h2>
+
+                        <h2>You can also download your favourite shows with the iOS or Android app. Use downloads to 
+                            watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Question 4-->
+                <div role="button" aria-expanded="false" tabindex="0" class="ques text-lg p-6 font-normal bg-[#2d2d2d] sm:text-xl xl:text-2xl hover:bg-[#3a3a3a] transition-colors 
+        duration-200 ease-in-out cursor-pointer
+        flex justify-between items-center">
+                    <span>How do I cancel?</span>
+                    <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                </div>
+
+                <!-- Answer 4 -->
+                <div class="answer">
+                    <div class="text-lg p-6 font-normal bg-[#2d2d2d] sm:text-md xl:text-2xl ">
+                        <h2>Netflix is flexible. You can easily cancel your account online in two clicks. 
+                            There are no cancellation fees – start or stop your account anytime.</h2>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div role="button" aria-expanded="false" tabindex="0" class="ques text-lg p-6 font-normal bg-[#2d2d2d] sm:text-xl xl:text-2xl hover:bg-[#3a3a3a] transition-colors 
+                            duration-200 ease-in-out cursor-pointer
+                            flex justify-between items-center">
+                    <span>What can I watch on Netflix?</span>
+                    <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                </div>
+
+                <!-- Answer 5 -->
+                <div class="answer">
+                    <div class="text-lg p-6 font-normal bg-[#2d2d2d] sm:text-md xl:text-2xl ">
+                        <h2>Netflix has an extensive library of feature films, documentaries, shows, anime, award-winning 
+                            Netflix originals, and more. Watch as much as you want, anytime you want.</h2>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div role="button" aria-expanded="false" tabindex="0" class="ques text-lg p-6 font-normal bg-[#2d2d2d] sm:text-xl xl:text-2xl hover:bg-[#3a3a3a] transition-colors 
+                            duration-200 ease-in-out cursor-pointer
+                            flex justify-between items-center">
+                    <span>Is Netflix good for kids?</span>
+                    <i class="fa-solid fa-plus transition-transform duration-300"></i>
+                </div>
+
+                <!-- Answer 6 -->
+                <div class="answer">
+                    <div class="grid gap-6 grid-cols-1 text-lg p-6 font-normal bg-[#2d2d2d] sm:text-md xl:text-2xl ">
+                        <h2>The Netflix Kids experience is included in your membership to give parents control 
+                            while kids enjoy family-friendly TV shows and films in their own space.</h2>
+
+                        <h2>Kids profiles come with PIN-protected parental controls that let you restrict 
+                            the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="mx-10 my-15 sm:mx-20 sm:my-20 xl:mx-35 xl:my-20">
+
+        <!-- Footer input -->
+        <div class="flex flex-col justify-center items-center">
+            <h3 class="py-4 text-sm font-normal xl:text-lg xl:font-medium">Ready to watch? Enter your email to create or
+                restart your
+                membership.</h3>
+
+            <div class="flex flex-col sm:flex-row gap-3 w-full max-w-3xl sm:px-0">
+
+                <input type="email" placeholder="Email address" class="xl:flex-1 md:flex-1 min-w-0 px-4 py-4 bg-black/60 text-white
+                border border-gray-500 rounded
+                focus:outline-none focus:border-white">
+
+                <button class="px-6 py-3 bg-red-600 text-white text-lg sm:text-xl font-bold rounded
+               hover:bg-red-700 active:scale-95 transition-all">
+                    Get Started
+                    <i class="fa-solid fa-angle-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer content -->
+        <div class="mt-18 text-[#999c9e]">
+            <p>Questions? Call <span class="underline underline-offset-2 hover:text-white">000-800-919-1743</span></p>
+        </div>
+
+        <div class="my-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
+            gap-y-3 gap-x-8 text-[#999c9e] text-sm">
+
+            <a class="hover:text-white underline underline-offset-2">FAQ</a>
+            <a class="hover:text-white underline underline-offset-2">Help Centre</a>
+            <a class="hover:text-white underline underline-offset-2">Account</a>
+            <a class="hover:text-white underline underline-offset-2">Media Centre</a>
+
+            <a class="hover:text-white underline underline-offset-2">Investor Relations</a>
+            <a class="hover:text-white underline underline-offset-2">Jobs</a>
+            <a class="hover:text-white underline underline-offset-2">Ways to Watch</a>
+            <a class="hover:text-white underline underline-offset-2">Terms of Use</a>
+
+            <a class="hover:text-white underline underline-offset-2">Privacy</a>
+            <a class="hover:text-white underline underline-offset-2">Cookie Preferences</a>
+            <a class="hover:text-white underline underline-offset-2">Corporate Information</a>
+            <a class="hover:text-white underline underline-offset-2">Contact Us</a>
+
+            <a class="hover:text-white underline underline-offset-2">Speed Test</a>
+            <a class="hover:text-white underline underline-offset-2">Legal Notices</a>
+            <a class="hover:text-white underline underline-offset-2">Only on Netflix</a>
+
+        </div>
+
+        <div class="my-10">
+            <button class="flex items-center gap-2 px-4 py-1.5 bg-black/60
+               text-white border border-gray-400 rounded text-sm font-medium">
+                <i class="fa-solid fa-language"></i>
+                English
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+
+        </div>
+        <p class="text-[#999c9e] my-10 ">Netflix India</p>
+
+        <p class="text-[#777a7b] text-sm">This page is protected by Google reCAPTCHA to ensure you're not a bot.
+            <span class="text-blue-500 underline underline-offset-2">Learn more.</span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

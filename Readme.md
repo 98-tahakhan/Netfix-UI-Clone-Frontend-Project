@@ -6,8 +6,15 @@ The goal of this project is to practice real-world frontend development concepts
 
 ---
 
-## 🌐 Live Demo
-https://netfix-ui-clone-frontend-project.vercel.app/
+## 📸 Screenshots
+
+### 🖥 Desktop View
+![Desktop View](screenshots/desktop1.png)
+![Desktop View](screenshots/desktop2.png) 
+
+### 📱 Mobile View
+![Mobile View](screenshots/mobile1.png)
+![Mobile View](screenshots/mobile2.png)
 
 ---
 
